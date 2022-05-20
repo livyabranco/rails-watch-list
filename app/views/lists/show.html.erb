@@ -1,0 +1,5 @@
+<h2><%= @list.name %></h2>
+<p><% @list.bookmarks.each do |bookmark| %><p>
+<%= bookmark.comment %>
+<%= render "bookmarks/destroy", bookmark: bookmark %>
+<% end %>

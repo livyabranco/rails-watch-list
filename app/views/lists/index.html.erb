@@ -1,0 +1,12 @@
+<div class="container flex-column">
+  <% @lists.each do |list| %>
+    <div class="card-product">
+      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+      <div class="card-product-infos">
+        <%= link_to list.name, list_path(list) %>
+        <p>Product description with <strong>relevant info</strong> only.</p>
+      </div>
+    </div>
+      <br>
+  <% end %>
+</div>
